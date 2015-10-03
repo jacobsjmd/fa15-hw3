@@ -1,0 +1,12 @@
+<h1>Cats</h1>
+<% for cat in @cats%>
+  <%= cat.name %>
+<% end %>
+<h1>Todos</h1>
+<% for todo in @todos%>
+  <%= "#{todo.tasks}, #{todo.finished} |"  %>
+<% end %>
+<h1>Users</h1>
+<% for user in @users%>
+  <%= "#{user.username}, #{user.email}, #{user.age} |"  %>
+<% end %>
